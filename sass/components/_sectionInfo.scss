@@ -1,43 +1,40 @@
 .information {
-  // padding-top: 94px;
   padding-top: 60px;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
-  .information__menu { 
-    margin-bottom: -30px;
-    @media screen and (min-width: 768px) { 
-       display: flex; 
-       flex-wrap: wrap;
-       margin-right: -30px;
-  }
-  @media screen and (min-width: 1200px){
-    margin-bottom: 0;
-  }
+  .information__menu {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   .information__item {
     width: 100%;
     margin-bottom: 30px;
-    @media screen and (min-width: 480px) {  
-      width: 450px;    
-  }
-    @media screen and (min-width: 768px) {
-      width: 354px;  
-      margin-right: 30px;  
-      
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 1200px) {
       width: 270px;
       margin-bottom: 0;
     }
   }
-  
-  
+
   .information__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;   
+    height: 120px;
     background-color: $color-svg;
     margin-bottom: 30px;
     @media screen and (min-width: 480px) {
@@ -46,7 +43,7 @@
     @media screen and (min-width: 768px) {
       width: 354px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       width: 270px;
     }
   }
@@ -59,9 +56,9 @@
     color: $color-black;
     margin-bottom: 10px;
     text-align: center;
-     @media screen and (min-width: 768px) {
-       text-align: left;
-     }     
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   .information__text {
     font-size: 14px;

@@ -1,19 +1,36 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .team__name {
-    font-weight: bold;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 28px;
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
     color: $color-black;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
   .team__menu {
-    display: flex;
-    padding: 0;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   .team__item {
     width: 270px;
