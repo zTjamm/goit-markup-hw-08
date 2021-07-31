@@ -3,30 +3,44 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .footer__wrapper {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   .footer__logo {
     width: 145px;
     font-family: $first-font;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $color-primary;
-    margin-right: 93px;
+    // margin-right: 93px;
     .footer__logo__item {
       color: $color-white;
     }
   }
   .footer__contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
     .footer__contacts__address {
       margin-top: 20px;
     }
-    .footer__contacts__menu,
-    .footer__contacts__item:nth-child(2) {
-      margin-top: 9px;
+    .footer__contacts__link-mail {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      @media screen and (min-width: 1200px) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+      }
     }
     .footer__contacts__text {
       font-style: normal;
@@ -53,7 +67,13 @@
     }
   }
   .footer__join {
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-right: 93px;
+    }
     .footer__join__text {
       font-weight: 700;
       font-size: 14px;
@@ -61,10 +81,11 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $color-white;
+      margin-top: 60px;
     }
     .footer__join__menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-top: 20px;
     }
     .footer__join__item {
@@ -96,20 +117,25 @@
   }
   .footer__subscribe {
     .footer__subscribe__text {
+      margin-top: 60px;
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 1.1;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $color-white;
     }
     .footer__subscribe__form {
-      display: flex;
+      @media screen and (min-width: 1200px) {
+        display: flex;
+      }
     }
     .footer__subscribe__input {
       width: 358px;
+      padding: 15px 0;
       padding-left: 16px;
+      margin-bottom: 20px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -117,8 +143,8 @@
       color: $color-white;
     }
     .footer__subscribe__button {
-      min-width: 200px;
-      min-height: 50px;
+      max-width: 200px;
+      max-height: 50px;
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;
@@ -131,7 +157,11 @@
       color: $color-white;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      margin-left: 12px;
+      margin: 0 auto;
+      padding: 10px 29px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+      }
       &:hover,
       &:focus {
         background: #188ce8;

@@ -21,14 +21,19 @@
   transform: translate(-50%, -50%);
   background-color: $color-white;
   padding: 40px;
+  min-width: 450px;
   .modal__name {
+    max-width: 370px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $color-black;
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+      max-width: 528px;
+    }
   }
   .modal__label {
     display: flex;
@@ -58,17 +63,26 @@
   .modal__ico-person {
     position: absolute;
     left: 55px;
-    top: 105px;
+    top: 140px;
+    @media screen and (min-width: 1200px) {
+      top: 110px;
+    }
   }
   .modal__ico-phone {
     position: absolute;
     left: 55px;
-    top: 172px;
+    top: 210px;
+    @media screen and (min-width: 1200px) {
+      top: 180px;
+    }
   }
   .modal__ico-email {
     position: absolute;
     left: 55px;
-    top: 240px;
+    top: 278px;
+    @media screen and (min-width: 1200px) {
+      top: 248px;
+    }
   }
   .modal__textarea {
     width: 100%;
@@ -85,12 +99,10 @@
     border-color: $color-primary;
   }
   .modal__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 20px;
-    margin-left: 13px;
-    margin-right: 12px;
+    @media screen and (min-width: 1200px) {
+      padding-left: 12px;
+    }
     .modal__footer__checkbox {
       position: relative;
       font-size: 14px;
@@ -129,18 +141,26 @@
     }
     .modal__footer__checkbox {
       appearance: none;
+      &:checked + .modal__footer__icon {
+        border-color: $color-primary;
+        background-color: $color-primary;
+        background-image: url("../images/icon-check-one.svg");
+        background-size: contain;
+        background-origin: border-box;
+      }
     }
-    &__checkbox:checked + &__icon {
-      border-color: $color-primary;
-      background-color: $color-primary;
-      background-image: url("../images/icon-check-one.svg");
-      background-size: contain;
-      background-origin: border-box;
-    }
+
     .modal__footer__lable {
       display: flex;
       text-align: center;
       margin-bottom: 30px;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
   }
   .modal__button-close {
@@ -166,8 +186,8 @@
     fill: $color-black;
     cursor: pointer;
     box-sizing: border-box;
-  }
-  &__icon-closed:hover {
-    fill: #03a9f4;
+    &:hover {
+      fill: #03a9f4;
+    }
   }
 }

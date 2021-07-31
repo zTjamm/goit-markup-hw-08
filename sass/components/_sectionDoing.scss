@@ -1,6 +1,11 @@
 .doing {
-  padding-top: 94px;
+  display: none;
+  // padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   .doing__name {
     font-weight: bold;
     font-size: 36px;

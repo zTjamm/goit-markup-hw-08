@@ -7,20 +7,33 @@ body {
   font-style: normal;
   font-weight: normal;
   color: $color-black;
-  margin: auto;  
+  margin: auto;
 }
-ul {
-  padding: 0;
+body.modal-open {
+  overflow: hidden;
 }
 li {
-  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
 }
-// .container {
-//   width: 450px;
-//   margin: 0 auto;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
