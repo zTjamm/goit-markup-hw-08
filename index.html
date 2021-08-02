@@ -69,7 +69,7 @@
         <!-- Шапка с кнопкой-->
         <section class="hero">
             <h1 class="hero__name">эффективные решения для вашего бизнеса</h1>
-            <button class="hero__button" type="button" data-modal-open>Заказать услугу</button> -->
+            <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
             <!-- модальное окно -->
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -165,19 +165,20 @@
                 <ul class="doing__menu">
                     <li class="doing__item">
                         <div class="doing__block">
-                            <img class="doing__img" src="./images/box1.jpg" alt="Работа на ПК" width="370">
+                            <img class="doing__img" srcset="./images/1-370.jpg 1x,
+                        ./images/1-740.jpg 2x" src="./images/1-370.jpg" alt="Работа на ПК" width="370">
                             <label class="doing__label">Десктопные приложения</label>
                         </div>
                     </li>
                     <li class="doing__item">
                         <div class="doing__block">
-                            <img class="doing__img" src="./images/box2.jpg" alt="Работа с телефонией" width="370">
+                            <img class="doing__img" srcset="./images/2-370.jpg 1x, ./images/2-740.jpg 2x" src="./images/2-370.jpg" alt="Работа с телефонией" width="370">
                             <label class="doing__label">Мобильные приложения</label>
                         </div>
                     </li>
                     <li class="doing__item">
                         <div class="doing__block">
-                            <img class="doing__img" src="./images/box3.jpg" alt="Работа с программой" width="370">
+                            <img class="doing__img" srcset="./images/3-370.jpg 1x, ./images/3-740.jpg 2x" src="./images/3-370.jpg" alt="Работа с программой" width="370">
                             <label class="doing__label">Дизайнерские решения</label>
                         </div>
                     </li>
@@ -190,7 +191,15 @@
                 <h2 class="team__name">Наша команда</h2>
                 <ul class="team__menu">
                     <li class="team__item">
-                        <img class="team__img" srcset="./images/k1-450.jpg 1x, ./images/k1-900.jpg 2x" src="./images/k1-450.jpg" alt="Дизайнер">
+                        <picture class="portfolio__img">                            
+                            <source srcset="./images/k1-1x270.jpg 270w, ./images/k1-2x540.jpg 540w" media="(min-width:1200px)"
+                                sizes="(min-width: 1200px) 270px, 100vw">
+                            <source srcset="./images/k1-1x354.jpg 354w, ./images/k1-2x708.jpg 708w" media="(min-width:768px)"
+                                sizes="(min-width: 768px) 354px, 100vw">
+                            <source srcset="./images/k1-1x450.jpg 450w, ./images/k1-2x900.jpg 900w" media="(min-width:480px)"
+                                sizes="(min-width: 480px) 450px, 100vw">
+                            <img class="team__img" src="./images/k1-1x450.jpg" alt="Дизайнер">
+                        </picture>                                            
                         <div class="team__footer">
                             <h3 class="team__footer__name">Игорь Демьяненко</h3>
                             <p class="team__footer__text">Product Designer</p>
@@ -219,7 +228,13 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" srcset="./images/k2-450.jpg 1x, ./images/k2-900.jpg 2x" src="./images/k2-450.jpg" alt="Разработчик">
+                        <source srcset="./images/k2-1x270.jpg 270w, ./images/k2-2x540.jpg 540w" media="(min-width:1200px)"
+                            sizes="(min-width: 1200px) 270px, 100vw">
+                        <source srcset="./images/k2-1x354.jpg 354w, ./images/k2-2x708.jpg 708w" media="(min-width:768px)"
+                            sizes="(min-width: 768px) 354px, 100vw">
+                        <source srcset="./images/k2-1x450.jpg 450w, ./images/k2-2x900.jpg 900w" media="(min-width:480px)"
+                            sizes="(min-width: 480px) 450px, 100vw">
+                        <img class="team__img" src="./images/k2-1x450.jpg" alt="Разработчик">                        
                         <div class="team__footer">
                             <h3 class="team__footer__name">Ольга Репина</h3>
                             <p class="team__footer__text">Product Designer</p>
@@ -248,7 +263,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" srcset="./images/k3-450.jpg 1x, ./images/k3-900.jpg 2x" src="./images/k3-450.jpg" alt="Маркетолог">
+                        <source srcset="./images/k3-1x270.jpg 270w, ./images/k3-2x540.jpg 540w" media="(min-width:1200px)"
+                            sizes="(min-width: 1200px) 270px, 100vw">
+                        <source srcset="./images/k3-1x354.jpg 354w, ./images/k3-2x708.jpg 708w" media="(min-width:768px)"
+                            sizes="(min-width: 768px) 354px, 100vw">
+                        <source srcset="./images/k3-1x450.jpg 450w, ./images/k3-2x900.jpg 900w" media="(min-width:480px)"
+                            sizes="(min-width: 480px) 450px, 100vw">
+                        <img class="team__img" src="./images/k3-1x450.jpg" alt="Маркетолог">
+                        <!-- <img class="team__img" srcset="./images/k3-450.jpg 1x, ./images/k3-900.jpg 2x" src="./images/k3-450.jpg" alt="Маркетолог"> -->
                         <div class="team__footer">
                             <h3 class="team__footer__name">Николай Тарасов</h3>
                             <p class="team__footer__text">Marketing</p>
@@ -277,7 +299,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" srcset="./images/k4-450.jpg 1x, ./images/k4-900.jpg 2x" src="./images/k4-450.jpg" alt="Дизайнер интерфейса">
+                        <source srcset="./images/k4-1x270.jpg 270w, ./images/k4-2x540.jpg 540w" media="(min-width:1200px)"
+                            sizes="(min-width: 1200px) 270px, 100vw">
+                        <source srcset="./images/k4-1x354.jpg 354w, ./images/k4-2x708.jpg 708w" media="(min-width:768px)"
+                            sizes="(min-width: 768px) 354px, 100vw">
+                        <source srcset="./images/k4-1x450.jpg 450w, ./images/k4-2x900.jpg 900w" media="(min-width:480px)"
+                            sizes="(min-width: 480px) 450px, 100vw">
+                        <img class="team__img" src="./images/k4-1x450.jpg" alt="Дизайнер интерфейса">
+                        <!-- <img class="team__img" srcset="./images/k4-450.jpg 1x, ./images/k4-900.jpg 2x" src="./images/k4-450.jpg" alt="Дизайнер интерфейса"> -->
                         <div class="team__footer">
                             <h3 class="team__footer__name">Михаил Ермаков</h3>
                             <p class="team__footer__text">UI Designer</p>
@@ -350,7 +379,7 @@
                     <p class="footer__contacts__text">г. Киев, пр-т Леси Украинки, 26</p>
                 </address>
                 <ul class="footer__contacts__menu">
-                    <li class="footer__contacts__item"><a class="footer__contacts__link footer__contacts__link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="footer__contacts__item footer__contacts__item-mail"><a class="footer__contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="footer__contacts__item"><a class="footer__contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>

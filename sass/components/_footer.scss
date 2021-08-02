@@ -3,8 +3,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .footer__wrapper {
-    // display: flex;
-    // align-items: baseline;
     text-align: center;
     @media screen and (min-width: 768px) {
       display: flex;
@@ -30,11 +28,10 @@
     }
   }
   .footer__contacts {
-    // margin-right: 70px;
     .footer__contacts__address {
       margin-top: 20px;
     }
-    .footer__contacts__link-mail {
+    .footer__contacts__item-mail {
       margin-top: 8px;
       margin-bottom: 8px;
       @media screen and (min-width: 1200px) {

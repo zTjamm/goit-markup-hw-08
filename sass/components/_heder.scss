@@ -13,12 +13,14 @@
     min-height: 80px;
   }
   .header__menu-button {
+    position: absolute;
+    right: 0;
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 3;
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -118,6 +120,7 @@
     background-color: #fff;
     padding: 48px 40px;
     font-size: 40px;
+
     @media screen and (max-width: 767px) {
       display: none;
       position: absolute;
@@ -127,6 +130,7 @@
       height: 100vh;
       &.is-open {
         display: block;
+        z-index: 2;
       }
     }
     @media screen and (min-width: 768px) {

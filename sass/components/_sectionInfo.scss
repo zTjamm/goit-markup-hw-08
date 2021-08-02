@@ -25,7 +25,7 @@
         width: 270px;
       }
     }
-    
+
     .information__wrapper {
       display: flex;
       align-items: center;
@@ -43,6 +43,9 @@
       color: $color-black;
       margin-bottom: 10px;
       text-align: center;
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
     }
     .information__text {
       font-size: 14px;
