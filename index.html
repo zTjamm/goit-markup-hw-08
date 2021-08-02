@@ -83,23 +83,23 @@
                     <form class="modal__form">
                         <h3 class="modal__name">Оставьте свои данные, мы вам перезвоним</h3>
                         <label class="modal__label" for="name">Имя</label>
-                        <input class="modal__form-input" type="name" name="name" />
+                        <input class="modal__form-input" type="text" id="name" name="name" />
                         <svg class="modal__ico modal__ico-person" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
 
-                        <label class="modal__label" for="phone">Телефон</label>
-                            <input class="modal__form-input" type="phone" name="phone" />
+                        <label class="modal__label" for="phones">Телефон</label>
+                            <input class="modal__form-input" id="phones" type="tel" name="phone" />
                             <svg class="modal__ico modal__ico-phone" width="18px" height="18px">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>                        
                         <label class="modal__label" for="email">Почта</label>
-                            <input class="modal__form-input" type="email" name="email" />
+                            <input class="modal__form-input" id="email" type="email" name="email" />
                             <svg class="modal__ico modal__ico-email" width="18px" height="18px">
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>                               
                         <label class="modal__label" for="comment">Комментарий</label>
-                            <textarea class="modal__textarea" name="feedback" rows="8" placeholder="Введите текст"></textarea>                       
+                            <textarea class="modal__textarea" id="comment" name="feedback" rows="8" placeholder="Введите текст"></textarea>                       
                     <div class="modal__footer">                       
                            <ul class="modal__footer__menu">                                 
                                 <li class="modal__footer__item">
@@ -422,14 +422,11 @@
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
-                </form>
-                    </li>
-                </ul>
+                </form>                  
             </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
-
 </html>
