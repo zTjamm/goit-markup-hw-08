@@ -1506,7 +1506,7 @@ img {
 }
 
 .portfolio .portfolio__item {
-  width: 450px;
+  max-width: 450px;
   height: 404px;
   margin-bottom: 30px;
 }
