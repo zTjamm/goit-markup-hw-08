@@ -8,6 +8,12 @@ body {
   font-weight: normal;
   color: $color-black;
   margin: auto;
+  margin-right: -115px;
+  overflow-x: hidden;
+  @media screen and (min-width: 480px) {
+    margin: auto;
+    overflow-x: scroll;
+  }
 }
 body.modal-open {
   overflow: hidden;

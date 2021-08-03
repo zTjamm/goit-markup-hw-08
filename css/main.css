@@ -9,6 +9,15 @@ body {
   font-weight: normal;
   color: #212121;
   margin: auto;
+  margin-right: -115px;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    margin: auto;
+    overflow-x: scroll;
+  }
 }
 
 body.modal-open {
@@ -807,15 +816,18 @@ img {
 
 .information .information__menu {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .information .information__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-right: -30px;
   }
 }
@@ -994,7 +1006,7 @@ img {
 
 .team .team__item {
   margin: 0 auto;
-  width: 100%;
+  max-width: 450px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1354,7 +1366,7 @@ img {
 }
 
 .footer .footer__subscribe .footer__subscribe__input {
-  width: 358px;
+  width: 100%;
   padding: 15px 0;
   padding-left: 16px;
   margin-bottom: 20px;
@@ -1364,6 +1376,12 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .footer .footer__subscribe .footer__subscribe__input {
+    width: 358px;
+  }
 }
 
 .footer .footer__subscribe .footer__subscribe__button {
