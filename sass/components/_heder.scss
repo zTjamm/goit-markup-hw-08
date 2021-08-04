@@ -120,14 +120,13 @@
     background-color: #fff;
     padding: 48px 40px;
     font-size: 40px;
-
     @media screen and (max-width: 767px) {
       display: none;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100vh;
+      height: 140vh;
       &.is-open {
         display: block;
         z-index: 2;
