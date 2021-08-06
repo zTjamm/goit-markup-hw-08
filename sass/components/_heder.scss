@@ -20,7 +20,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 3;
+    z-index: 1;
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -38,7 +38,7 @@
     .header__menu__link {
       display: block;
       font-weight: 500;
-      font-size: 40px;
+      font-size: 24px;
       line-height: 1.1;
       letter-spacing: 0.02em;
       text-decoration: none;
@@ -46,12 +46,18 @@
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 480px) {
+        font-size: 40px;
+      }
       @media screen and (min-width: 768px) {
         font-size: 14px;
       }
     }
     .header__menu__link-portfolio {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 479px) {
+        padding: 15px 0;
+      }
+      @media screen and (min-width: 480px) {
         padding: 35px 0 32px 0;
       }
       @media screen and (min-width: 768px) {
@@ -132,7 +138,7 @@
       height: 100vh;
       &.is-open {
         display: block;
-        z-index: 2;
+        // z-index: 1;
       }
     }
     @media screen and (min-width: 768px) {
@@ -143,7 +149,12 @@
     }
   }
   .header__contacts {
-    margin-top: 302px;
+    @media screen and (max-width: 478px) {
+      margin-top: 240px;
+    }
+    @media screen and (min-width: 480px) {
+      margin-top: 302px;
+    }
     @media screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: 84px;
@@ -177,9 +188,13 @@
     }
   }
   .header__contacts__link-tel {
-    font-size: 34px;
+    font-size: 24px;
     color: $color-primary;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+      margin-bottom: 32px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 12px;
       color: $color-gray;
@@ -222,10 +237,14 @@
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 9px;
     line-height: 1.2;
-    margin-top: 64px;
+    margin-top: 44px;
     margin-right: -30px;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      margin-top: 64px;
+    }
     @media screen and (min-width: 768px) {
       display: none;
     }

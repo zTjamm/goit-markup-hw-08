@@ -105,7 +105,7 @@
                                 <li class="modal__footer__item">
                                     <label class="modal__footer__lable">
                                         <input class="modal__footer__checkbox" type="checkbox" name="topic" value="html" />
-                                        <span class="modal__footer__icon" ></span>Соглашаюсь с рассылкой и принимаю &nbsp; <a href="#" class="modal__footer__link">Условия договора</a>
+                                        <span class="modal__footer__icon" ></span>Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="modal__footer__link">Условия договора</a>
                                     </label>
                                 </li>
                            </ul>                                          
@@ -191,15 +191,15 @@
                 <h2 class="team__name">Наша команда</h2>
                 <ul class="team__menu">
                     <li class="team__item">
-                        <picture class="portfolio__img">                            
-                            <source srcset="./images/k1-1x270.jpg 270w, ./images/k1-2x540.jpg 540w" media="(min-width:1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw">
-                            <source srcset="./images/k1-1x354.jpg 354w, ./images/k1-2x708.jpg 708w" media="(min-width:768px)"
-                                sizes="(min-width: 768px) 354px, 100vw">
-                            <source srcset="./images/k1-1x450.jpg 450w, ./images/k1-2x900.jpg 900w" media="(max-width:767px)"
-                                sizes="(max-width: 767px) 450px, 100vw">                               
-                                <img class="team__img" src="./images/k1-1x450.jpg" alt="Дизайнер">                            
-                        </picture>                                            
+                        <img srcset="
+                        ./images/k1-1x450.jpg 450w,
+                        ./images/k1-2x900.jpg 900w,
+                        ./images/k1-1x354.jpg 354w,
+                        ./images/k1-2x708.jpg 708w,                                                    
+                        ./images/k1-1x270.jpg 270w,
+                        ./images/k1-2x540.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/k1-1x450.jpg" alt="Дизайнер" />                                                               
                         <div class="team__footer">
                             <h3 class="team__footer__name">Игорь Демьяненко</h3>
                             <p class="team__footer__text">Product Designer</p>
@@ -228,15 +228,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <picture class="portfolio__img">
-                            <source srcset="./images/k2-1x270.jpg 270w, ./images/k2-2x540.jpg 540w" media="(min-width:1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw">
-                            <source srcset="./images/k2-1x354.jpg 354w, ./images/k2-2x708.jpg 708w" media="(min-width:768px)"
-                                sizes="(min-width: 768px) 354px, 100vw">
-                            <source srcset="./images/k2-1x450.jpg 450w, ./images/k2-2x900.jpg 900w" media="(min-width:480px)"
-                                sizes="(max-width: 767px) 450px, 100vw">
+                        <img srcset="
+                                                ./images/k2-1x450.jpg 450w,
+                                                ./images/k2-2x900.jpg 900w,
+                                                ./images/k2-1x354.jpg 354w,
+                                                ./images/k2-2x708.jpg 708w,                                                    
+                                                ./images/k2-1x270.jpg 270w,
+                                                ./images/k2-2x540.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                            src="./images/k2-1x450.jpg" alt="Разработчик" />
+                        <!-- <picture class="portfolio__img">
+                            <source srcset="./images/k2-1x270.jpg 270w, ./images/k2-2x540.jpg 540w" media="(min-width:1200px)">
+                            <source srcset="./images/k2-1x354.jpg 354w, ./images/k2-2x708.jpg 708w" media="(min-width:768px)">
+                            <source srcset="./images/k2-1x450.jpg 450w, ./images/k2-2x900.jpg 900w" media="(min-width:320px)">
                             <img class="team__img" src="./images/k2-1x450.jpg" alt="Разработчик">
-                        </picture>                                              
+                        </picture>                                               -->
                         <div class="team__footer">
                             <h3 class="team__footer__name">Ольга Репина</h3>
                             <p class="team__footer__text">Product Designer</p>
