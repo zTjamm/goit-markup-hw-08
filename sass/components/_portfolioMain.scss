@@ -68,10 +68,10 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    height: 146px;
-    @media screen and (min-width: 768px) {
-      height: 146px;
-    }
+    max-height: 146px;
+    // @media screen and (min-width: 768px) {
+    //   height: 146px;
+    // }
     @media screen and (min-width: 1200px) {
       height: 110px;
     }
